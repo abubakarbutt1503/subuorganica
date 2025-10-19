@@ -2,9 +2,9 @@
   "name": "subu-backend",
   "version": "1.0.0",
   "private": true,
-  "main": "index.js",
+  "main": "server/index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node server/index.js",
     "dev": "nodemon index.js"
   },
   "dependencies": {

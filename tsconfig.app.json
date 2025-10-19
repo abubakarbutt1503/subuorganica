@@ -26,5 +26,5 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src", "server/index.js"]
+  "include": ["src", "index.js"]
 }
