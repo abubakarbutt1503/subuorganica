@@ -71,3 +71,29 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+
+---
+
+## Backend for Checkout (local)
+
+This project includes a small Express backend under the `server/` folder that accepts POST `/api/checkout` requests and sends an order email using SMTP.
+
+Quick start:
+
+1. cd into the server folder:
+
+```powershell
+cd server; npm install
+```
+
+2. Copy `.env.example` to `.env` and fill in your SMTP credentials.
+
+3. Start the server:
+
+```powershell
+npm run dev
+```
+
+4. In development, set `VITE_API_URL` in your frontend `.env` to `http://localhost:4000` so the checkout form posts to the backend.
+
+Note: Emails will only be sent if valid SMTP credentials are provided.
