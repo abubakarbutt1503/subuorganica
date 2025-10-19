@@ -73,8 +73,8 @@ const Checkout = () => {
 
     try {
       // 🧠 Backend API URL — change if deployed
-      const baseURL =
-        (import.meta.env.VITE_API_URL as string) || 'http://localhost:4000';
+      const baseURL = 'https://subuorganica.onrender.com';
+
       const response = await fetch(`${baseURL}/api/checkout`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
